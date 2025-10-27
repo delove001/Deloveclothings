@@ -1,0 +1,375 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins' sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #111;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+body{
+    background: #03101d;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffcc00;
+    letter-spacing: 1px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 25px;
+    gap: 25px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #fcfcfd;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+ul li a:hover{
+    color: yellowgreen;
+
+}
+
+.hero{
+    background: url(MALE_DELOVE.jpg) no-repeat center center/cover ;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(DELOVE_OUTFIT.jpg);
+}
+
+#home{
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    position: relative;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(red, green, blue, alpha);
+}
+
+.hero-content{
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.shop-btn{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.shop-btn:hover{
+    background-color: #fff;
+    color: #111;
+}
+
+#about{
+    padding: 80px 10%;
+    background-color: black;
+    text-align: center;
+}
+
+#about h2{
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-text{
+    flex: 1 1 400px;
+    font-size: 1.1rem;
+}
+
+.about-image img{
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px yellow;
+}
+
+#shop{
+    padding: 80px 10%;
+    background-color: white;
+    text-align: center;
+}
+#shop h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.buy-btn{
+    background-color: #ffcc00;
+    color: rgb(3, 8, 77);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.buy-btn:hover{
+    background-color: blueviolet;
+}
+
+header h1{
+    font-size: 2.5em;
+    color: #f5c91c;
+}
+
+nav{
+    margin-top: 10px;
+}
+
+
+section{
+    padding: 60px;
+    text-align: center;
+    background: rgba(red, green, blue, alpha);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.product{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    display: inline-block;
+    box-shadow: 0 4px 10px black;
+    transition: transform 0.3s ease;
+    width: 280px;
+    vertical-align: top;
+}
+
+.product:hover{
+    transform: translateY(-5px);
+}
+
+.products h3{
+    color: #111;
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+}
+
+.products p{
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product strong {
+  color: #000;
+  font-size: 1.1rem;
+}
+
+#contact p{
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#contact{
+    padding: 80px 10%;
+    background-color: white;
+    text-align: center;
+}
+
+#contact h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+footer{
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 1rem;
+}
+
+footer p{
+    margin: 5px 0;
+}
+
+footer p:last-child:hover{
+    color: #ffcc00;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+}
+
+#shop{
+    background-color:white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#shop h2{
+    font-size: 30px;
+    margin-bottom: 32px;
+    color: #111;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+#home {
+  animation-delay: 0.2s;
+}
+#about {
+  animation-delay: 0.4s;
+}
+#shop {
+  animation-delay: 0.6s;
+}
+#contact {
+  animation-delay: 0.8s;
+}
+footer {
+  animation-delay: 1s;
+}
+
+.social-links a {
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: 18px;
+}
+
+.social-links a:nth-child(1):hover{
+    background-color: #1877f2;
+}
+
+.social-links a:nth-child(2):hover{
+    background-color: #E4405F;
+}
+
+.social-links a:nth-child(3):hover{
+    background-color: #1da1f2;
+}
+
+.social-links a:nth-child(4):hover{
+    background-color: #010101;
+    color: #69c9d0;
+}
+
+.social-links a:nth-child(5):hover{
+    background-color: #25d366;
+}
