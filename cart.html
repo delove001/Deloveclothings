@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | Delove Clothing</title>
+  <link rel="stylesheet" href="delove.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Delove Clothing</div>
+    <nav>
+      <ul>
+        <li><a href="delove.html">HOME</a></li>
+        <li><a href="cart.html" class="active">CART</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="cart-page">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-box">
+
+      <div class="cart-item" data-price="60">
+        <img src="MALE_DELOVE.jpg" alt="Men Outfit">
+        <div class="item-info">
+          <h3>Men’s Outfit</h3>
+          <p>$60.00</p>
+          <input type="number" value="0" min="1" class="qty-input">
+          <button class="remove-btn">Remove</button>
+        </div>
+        <div class="item-line-total">$60.00</div>
+      </div>
+
+      <div class="cart-item" data-price="50">
+        <img src="DELOVE_FEMALE.jpg" alt="Women Dress">
+        <div class="item-info">
+          <h3>Women’s Dress</h3>
+          <p>$50.00</p>
+          <input type="number" value="0" min="1" class="qty-input">
+          <button class="remove-btn">Remove</button>
+        </div>
+        <div class="item-line-total">$50.00</div>
+      </div>
+
+      <div class="cart-item" data-price="40">
+        <img src="delove-hoodie.png" alt="Classic Jeans">
+        <div class="item-info">
+          <h3>Classic Jeans</h3>
+          <p>$40.00</p>
+          <input type="number" value="0" min="1" class="qty-input">
+          <button class="remove-btn">Remove</button>
+        </div>
+        <div class="item-line-total">$40.00</div>
+      </div>
+
+    </div>
+
+    <div class="cart-summary">
+      <h3>Total: <span id="cart-total">$150.00</span></h3>
+      <button id="checkout" class="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+    <div class="payment-section">
+  <h3>Payment Details (USD)</h3>
+  <p>Please make payment to the account below:</p>
+
+  <div class="bank-details">
+    <p><strong>Bank Name:</strong> Zenith Bank</p>
+    <p><strong>Account Name:</strong> Delove Clothing</p>
+    <p><strong>Dollar Account Number:</strong> 1234567890</p>
+    <p><strong>SWIFT Code:</strong> ZEIBNGLA</p>
+  </div>
+
+  <p>After payment, send your proof of payment to:</p>
+  <a href="https://wa.me/2348012345678?text=Hi%20Delove%20Clothing!%20I%20have%20made%20payment%20for%20my%20order."
+     target="_blank" class="whatsapp-btn">Send Payment Proof</a>
+</div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Delove Clothing. All rights reserved.</p>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>
